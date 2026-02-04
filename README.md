@@ -34,13 +34,21 @@ Basic checks performed:
 
 ```bash
 Breast_Cancer_Prediction/
-├── NoteBooks/
-│ ├── 01_Data_Loading.ipynb
-│ ├── breast_cancer_logistic_regression_model.pkl
+|
+├── noteBooks/
+│ ├── 01_Data_Loading_and_EDA.ipynb
+│ ├── 02_Modeling.ipynb
+|
+├── models/
+│ ├── logistic_regression_model.pkl
 │ ├── scaler.pkl
+|
+├── src/
+│ ├── predict.py
+|
 ├── README.md
-├── .gitignore
-└── (other project files)
+├── requirements.txt
+└── .gitignore
 ```
 
 
