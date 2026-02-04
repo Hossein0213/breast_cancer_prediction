@@ -41,6 +41,7 @@ Breast_Cancer_Prediction/
 ├── README.md
 ├── .gitignore
 └── (other project files)
+```
 
 
 ### Modeling
@@ -55,7 +56,7 @@ Breast_Cancer_Prediction/
 from sklearn.model_selection import train_test_split
 
 X = df.drop('target', axis=1)
-y = df['target]
+y = df['target']
 
 X_train, X_test, y_train, y_test = train_test_split(
                                     X, y, test_size = 20,
