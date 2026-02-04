@@ -44,7 +44,7 @@ Breast_Cancer_Prediction/
 ```
 
 
-### Modeling
+### 🧠 Modeling
 ## 1. Train/Test Split
 
 - Features: All columns except the target
@@ -86,3 +86,29 @@ print("Accuracy:", acc)
 print(classification_report(y_test, y_pred))
 print(confusion_matrix(y_test, y_pred))
 ```
+
+Results:
+- Accuracy: ~0.956
+- Confusion Matrix:
+
+```Code
+[[39  3]
+ [2  70]]
+```
+
+### 🎯 Final Model
+Selected Model: Logistic Regression
+Preprocessing: StandardScaler
+
+Saved Artifacts:
+. breast_cancer_logistic_regression_model.pkl
+. scaler.pkl
+
+```Python
+import joblib
+
+joblib.dump(model, "breast_cancer_logistic_regression_model.pkl")
+joblib.dump(scaler, "scaler.pkl")
+```
+
+### How to Run
