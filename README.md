@@ -41,3 +41,6 @@ Breast_Cancer_Prediction/
 ├── README.md
 ├── .gitignore
 └── (other project files)
+
+```Python
+from sklearn.model_selection import train_test_split
