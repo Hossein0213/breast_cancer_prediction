@@ -112,3 +112,21 @@ joblib.dump(scaler, "scaler.pkl")
 ```
 
 ### How to Run
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/Hossein0213/breast_cancer_prediction.git
+cd breast_cancer_prediction
+```
+
+## 2. (Optional) Create a virtual environment
+
+## 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 4. Run the notebook
+* with Jupyter Notbook
+* Or VS Code (Jupyter Extension)
