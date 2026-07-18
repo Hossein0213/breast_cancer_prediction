@@ -1,5 +1,5 @@
 # Breast Cancer Prediction using Machine Learning
-س
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
