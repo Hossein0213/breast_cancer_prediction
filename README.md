@@ -1,5 +1,11 @@
 # Breast Cancer Prediction using Machine Learning
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![Accuracy](https://img.shields.io/badge/Accuracy-95.6%25-brightgreen)
+Predicting breast cancer **(Benign vs Malignant)** using classical Ml models, deploy as an intractive web app with **Streamlit**.
+
 ## Overview
 
 This project focuses on predicting breast cancer (benign vs malignant) using classical machine learning models on the well-known Breast Cancer Wisconsin dataset from 'sciki-learn'.
