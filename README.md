@@ -29,15 +29,24 @@ The goal is to:
 | Target | 0 → Malignant, 1 → Benign |
 | Missing values | None |
 
-Basic checks performed:
-- `df.head()` to inspect the first rows
+**Basic checks performed:**
+- `df.head()` inspect first rows
 - `df.shape` → (569, 31)
-- `df.info()` to inspect dtypes and non-null counts
+- `df.info()` dtypes and non-null counts
 - `df.isnull().sum()` → No missing values
-- `df['target'].value_counts()` to check class distribution
+- `df['target'].value_counts()` - class distribution
 
 
 ----
+## Results
+| Model | Accuracy | F1 Score | AUC |
+|-------|---------:|---------:|----:|
+| Logistic Regression | 0.9825 | 0.9861 | 0.9954 |
+| Random Forest | 0.9561 | 0.9655 | 0.9931 |
+
+
+> ** Best model:** Logistic Regression with 0.9825% accuracy
+
 ## Project Structure
 
 ```bash
