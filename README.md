@@ -123,7 +123,7 @@ Results:
 
 ### 3. Random Forest
 
-'''Python
+```Python
 from sklrean.ensemble import RandomForestClassifier
 
 rf_model = RandomForestClassifier(n_estimators = 200,
@@ -139,16 +139,16 @@ print("RandomForest Accuracy: ", rf_acc)
 
 print("\nClassification Report: \n", classification_report(y_test, y_pred_rf))
 print("\nConfusion Matrix: \n", confusion_matrix(y_test, y_pred_rf))
-'''
+```
 
 ### 3. 💾 Saved Artifacts
 
-'''Python
+```Python
 import joblib
 
 joblib.dump(model, "models/logistic_regression_model.pkl")
 joblib.dump(scaler, "models/scaler.pkl")
-'''
+```
 
 | File | Description |
 |------|-------------|
@@ -168,10 +168,10 @@ cd breast_cancer_prediction
 ```
 
 ### 2. Create a virtual environment (Optional)
-'''bash
+```bash
 python -m venv venv
 source venv/bin/activate # Windows: venv/Scripts/activate
-'''
+```
 
 ### 3. Install dependencies
 ```bash
@@ -183,9 +183,9 @@ pip install -r requirements.txt
 - Or VS Code with Jupyter Extension
 
 ### 5. Run Streamlit app
-'''bash
+```bash
 streamlit run streamlit_app.py
-'''
+```
 
 ---
 
