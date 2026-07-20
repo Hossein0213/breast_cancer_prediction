@@ -5,11 +5,11 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![Accuracy](https://img.shields.io/badge/Accuracy-95.6%25-brightgreen)
 
-Predicting breast cancer **(Benign vs Malignant)** using classical Ml models, deploy as an intractive web app with **Streamlit**.
+Predicting breast cancer **(Benign vs Malignant)** using classical ML models, deploy as an interactive web app with **Streamlit**.
 
 ## 📋 Overview
 
-This project focuses on predicting breast cancer (benign vs malignant) using classical machine learning models on the well-known Breast Cancer Wisconsin dataset from 'sciki-learn'.
+This project focuses on predicting breast cancer (benign vs malignant) using classical machine learning models on the well-known Breast Cancer Wisconsin dataset from 'scikit-learn'.
 
 The goal is to:
 - Load and explore the dataset
@@ -45,7 +45,7 @@ The goal is to:
 | Random Forest | 0.9561 | 0.9655 | 0.9931 |
 
 
-> ** Best model:** Logistic Regression with 0.9825% accuracy
+> ** Best model:** Logistic Regression with 98.25% accuracy
 
 ## 📁 Project Structure
 
@@ -75,7 +75,7 @@ Breast_Cancer_Prediction/
 - Features: All columns except the target
 - Target: 'target' column
 - Split: %80 Train / %20 Test
-- Startified: maintains class proportions
+- Stratified: maintains class proportions
 
 ```Python
 from sklearn.model_selection import train_test_split
@@ -101,7 +101,7 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-model = LogisticRegrssion(max_iter = 2000)
+model = LogisticRegression(max_iter = 2000)
 model.fit(X_train_scaled, y_train)
 
 y_pred = model.predict(X_test_scaled)
@@ -124,7 +124,7 @@ Results:
 ### 3. Random Forest
 
 ```Python
-from sklrean.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 
 rf_model = RandomForestClassifier(n_estimators = 200,
                                   max_depth = None,
@@ -192,9 +192,9 @@ streamlit run streamlit_app.py
 ## 💡 Key Findings
 
 - Dataset is ** clean ** - no missing values across all 30 features
-- ** Logistic Regression ** outprforms Random Forest (98.2% vs 95.6%)
-- 'StandardScaler' is essntial - improves logistic Regression singnificantly
-- Most informative featuers: 'mean radius', 'mean concave points', 'worst perineter'
+- ** Logistic Regression ** outperforms Random Forest (98.2% vs 95.6%)
+- 'StandardScaler' is essential - improves logistic Regression significantly
+- Most informative featuers: 'mean radius', 'mean concave points', 'worst perimeter'
 
 ---
 
