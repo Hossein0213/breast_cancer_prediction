@@ -1,4 +1,4 @@
-# Breast Cancer Prediction using Machine Learning
+# 🔬 Breast Cancer Prediction using Machine Learning
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2-orange)
@@ -7,7 +7,7 @@
 
 Predicting breast cancer **(Benign vs Malignant)** using classical Ml models, deploy as an intractive web app with **Streamlit**.
 
-## Overview
+## 📋 Overview
 
 This project focuses on predicting breast cancer (benign vs malignant) using classical machine learning models on the well-known Breast Cancer Wisconsin dataset from 'sciki-learn'.
 
@@ -19,7 +19,7 @@ The goal is to:
 
 ----
 
-# Dataset
+## 📊 Dataset
 
 | Property | Value |
 |----------|-------|
@@ -38,7 +38,7 @@ The goal is to:
 
 
 ----
-## Results
+## 🎯 Results
 | Model | Accuracy | F1 Score | AUC |
 |-------|---------:|---------:|----:|
 | Logistic Regression | 0.9825 | 0.9861 | 0.9954 |
@@ -47,7 +47,7 @@ The goal is to:
 
 > ** Best model:** Logistic Regression with 0.9825% accuracy
 
-## Project Structure
+## 📁 Project Structure
 
 ```bash
 Breast_Cancer_Prediction/
@@ -69,13 +69,13 @@ Breast_Cancer_Prediction/
 ```
 
 
-### 🧠 Modeling
-## 1. Train/Test Split
+## 🧠 Modeling
+### 1. Train/Test Split
 
 - Features: All columns except the target
-- Target: Column target
-- Split: %80 Train, %20 Test
-- Startified: To maintain class proportions
+- Target: 'target' column
+- Split: %80 Train / %20 Test
+- Startified: maintains class proportions
 
 ```Python
 from sklearn.model_selection import train_test_split
@@ -84,13 +84,13 @@ X = df.drop('target', axis=1)
 y = df['target']
 
 X_train, X_test, y_train, y_test = train_test_split(
-                                    X, y, test_size = 20,
+                                    X, y, test_size = 0.2,
                                     random_state = 42,
                                     stratify = y)
 ```
 
 
-## 2. Logistic Regression (with StandardScaler)
+### 2. Logistic Regression (with StandardScaler)
 
 ```Python
 from sklearn.linear_model import LogisticRegression
@@ -121,37 +121,86 @@ Results:
  [2  70]]
 ```
 
-### 🎯 Final Model
-Selected Model: Logistic Regression
-Preprocessing: StandardScaler
+### 3. Random Forest
 
-Saved Artifacts:
-. breast_cancer_logistic_regression_model.pkl
-. scaler.pkl
+'''Python
+from sklrean.ensemble import RandomForestClassifier
 
-```Python
+rf_model = RandomForestClassifier(n_estimators = 200,
+                                  max_depth = None,
+                                  random_state = 42)
+
+rf_model.fit(X_train, y_train)
+
+y_pred_rf = rf_model.predict(X_test)
+
+rf_acc = accuracy_score(y_test, y_pred_rf)
+print("RandomForest Accuracy: ", rf_acc)
+
+print("\nClassification Report: \n", classification_report(y_test, y_pred_rf))
+print("\nConfusion Matrix: \n", confusion_matrix(y_test, y_pred_rf))
+'''
+
+### 3. 💾 Saved Artifacts
+
+'''Python
 import joblib
 
-joblib.dump(model, "breast_cancer_logistic_regression_model.pkl")
-joblib.dump(scaler, "scaler.pkl")
-```
+joblib.dump(model, "models/logistic_regression_model.pkl")
+joblib.dump(scaler, "models/scaler.pkl")
+'''
 
-### How to Run
-## 1. Clone the repository
+| File | Description |
+|------|-------------|
+| 'logistic_regression_model.pkl' | Trained Logistic Regression Model |
+| 'scaler.pkl' | Fitted StandardScaler |
+
+---
+
+
+## ⚙️ How to Run
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Hossein0213/breast_cancer_prediction.git
 cd breast_cancer_prediction
 ```
 
-## 2. (Optional) Create a virtual environment
+### 2. Create a virtual environment (Optional)
+'''bash
+python -m venv venv
+source venv/bin/activate # Windows: venv/Scripts/activate
+'''
 
-## 3. Install dependencies
-
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-## 4. Run the notebook
-* with Jupyter Notbook
-* Or VS Code (Jupyter Extension)
+### 4. Run the notebook
+- Open with Jupyter Notebook
+- Or VS Code with Jupyter Extension
+
+### 5. Run Streamlit app
+'''bash
+streamlit run streamlit_app.py
+'''
+
+---
+
+## 💡 Key Findings
+
+- Dataset is ** clean ** - no missing values across all 30 features
+- ** Logistic Regression ** outprforms Random Forest (98.2% vs 95.6%)
+- 'StandardScaler' is essntial - improves logistic Regression singnificantly
+- Most informative featuers: 'mean radius', 'mean concave points', 'worst perineter'
+
+---
+
+## 👤 Author
+
+**Hossein** — AI & Robotics Engineer
+Master's degree in AI and Robotics
+
+[![GitHub](https://img.shields.io/badge/GitHub-Hossein0213-black)](https://github.com/Hossein0213)
