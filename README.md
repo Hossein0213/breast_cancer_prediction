@@ -21,7 +21,6 @@ The goal is to:
 
 # Dataset
 
-
 | Property | Value |
 |----------|-------|
 | Source | `sklearn.datasets.load_breast_cancer` |
@@ -29,7 +28,6 @@ The goal is to:
 | Features | 30 numerical features |
 | Target | 0 → Malignant, 1 → Benign |
 | Missing values | None |
-
 
 Basic checks performed:
 - `df.head()` to inspect the first rows
