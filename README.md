@@ -4,6 +4,7 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![Accuracy](https://img.shields.io/badge/Accuracy-95.6%25-brightgreen)
+
 Predicting breast cancer **(Benign vs Malignant)** using classical Ml models, deploy as an intractive web app with **Streamlit**.
 
 ## Overview
@@ -19,12 +20,15 @@ The goal is to:
 ----
 
 # Dataset
-- Source: 'sklearn.datasets.load_breast_cancer'
-- Samples: 569
-features: 30 numerical features
-- Target:
-    - '0' → Malignant
-    - '1' → Benign
+
+
+| Property | Value |
+|----------|-------|
+| Source | `sklearn.datasets.load_breast_cancer` |
+| Samples | 569 |
+| Features | 30 numerical features |
+| Target | 0 → Malignant, 1 → Benign |
+| Missing values | None |
 
 
 Basic checks performed:
