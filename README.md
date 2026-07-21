@@ -47,8 +47,8 @@ The goal is to:
 
 **Class distribution:**
 
-<p align="right">
-  <img src="images/class_count.png" width="300">
+<p align="center">
+  <img src="images/class_count.png" width="350">
   <img src="images/target_distribution_pie.png" width="300">
 </p>
 <!-- ![Class Distribution](images/class_count.png) ![target distribution](images/target_distribution_pie.png) -->
