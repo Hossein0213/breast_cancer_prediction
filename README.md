@@ -47,7 +47,11 @@ The goal is to:
 
 **Class distribution:**
 
-![Class Distribution](images/class_count.png) ![target distribution](images/target_distribution_pie.png)
+<p align= "center">
+    <img scr = "images/class_count.png" width = "400">
+    <img scr = "images/target_distribution_pie.png" width = "400">
+</p>
+<!-- ![Class Distribution](images/class_count.png) ![target distribution](images/target_distribution_pie.png) -->
 
 **Basic checks performed:**
 - `df.head()` inspect first rows
