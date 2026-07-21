@@ -7,9 +7,24 @@
 
 Predicting breast cancer **(Benign vs Malignant)** using classical ML models, deploy as an interactive web app with **Streamlit**.
 
+
+## 📑 Table of Contents
+
+- [Overview](#-overview)
+- [Dataset](#-dataset)
+- [Results](#-results)
+- [Project Structure](#-project-structure)
+- [Modeling](#-modeling)
+- [How to Run](#️-how-to-run)
+- [Key Findings](#-key-findings)
+- [Author](#-author)
+
+---
+
+
 ## 📋 Overview
 
-This project focuses on predicting breast cancer (benign vs malignant) using classical machine learning models on the well-known Breast Cancer Wisconsin dataset from 'scikit-learn'.
+This project focuses on predicting breast cancer (benign vs malignant) using classical machine learning models on the well-known Breast Cancer Wisconsin dataset from `scikit-learn`.
 
 The goal is to:
 - Load and explore the dataset
@@ -45,7 +60,7 @@ The goal is to:
 | Random Forest | 0.9561 | 0.9655 | 0.9931 |
 
 
-> ** Best model:** Logistic Regression with 98.25% accuracy
+> **Best model:** Logistic Regression with 98.25% accuracy
 
 ## 📁 Project Structure
 
@@ -73,7 +88,7 @@ Breast_Cancer_Prediction/
 ### 1. Train/Test Split
 
 - Features: All columns except the target
-- Target: 'target' column
+- Target: `target` column
 - Split: %80 Train / %20 Test
 - Stratified: maintains class proportions
 
@@ -141,7 +156,7 @@ print("\nClassification Report: \n", classification_report(y_test, y_pred_rf))
 print("\nConfusion Matrix: \n", confusion_matrix(y_test, y_pred_rf))
 ```
 
-### 3. 💾 Saved Artifacts
+### 4. 💾 Saved Artifacts
 
 ```Python
 import joblib
