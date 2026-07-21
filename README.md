@@ -46,7 +46,7 @@ The goal is to:
 
 
 ## Class distribution:
-https://claude.ai/chat/images/class_distribution.png
+https://kommodo.ai/i/ADoE8uSPrSwOk4u69eVj
 
 **Basic checks performed:**
 - `df.head()` inspect first rows
