@@ -47,7 +47,7 @@ The goal is to:
 
 **Class distribution:**
 
-![Class Distribution](images/class_distribution.png)
+![Class Distribution](images/class_count.png)
 
 **Basic checks performed:**
 - `df.head()` inspect first rows
