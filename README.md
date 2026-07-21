@@ -49,8 +49,6 @@ The goal is to:
 
 <p align="right">
   <img src="images/class_count.png" width="300">
-</p>
-<p align="left">
   <img src="images/target_distribution_pie.png" width="300">
 </p>
 <!-- ![Class Distribution](images/class_count.png) ![target distribution](images/target_distribution_pie.png) -->
