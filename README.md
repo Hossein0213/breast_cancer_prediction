@@ -46,7 +46,7 @@ The goal is to:
 
 
 ## Class distribution:
-![class_count.png] ![target_distribution_pie.png)]
+https://claude.ai/chat/images/class_distribution.png
 
 **Basic checks performed:**
 - `df.head()` inspect first rows
