@@ -54,10 +54,10 @@ The goal is to:
 
 <p align="center">
   <img src="images/feature_distributions.png" width="500">
-  <img src="imeges/correlation_heatmap.png" width="500">
+  <img src="images/correlation_heatmap.png" width="500">
 </p>
 
-<!-- ![Class Distribution](images/class_count.png) ![target distribution](images/target_distribution_pie.png) -->
+
 
 **Basic checks performed:**
 - `df.head()` inspect first rows
@@ -65,56 +65,6 @@ The goal is to:
 - `df.info()` dtypes and non-null counts
 - `df.isnull().sum()` → No missing values
 - `df['target'].value_counts()` - class distribution
-
-
-----
-## 🎯 Results
-| Model | Accuracy | F1 Score | AUC |
-|-------|---------:|---------:|----:|
-| Logistic Regression | 0.9825 | 0.9861 | 0.9954 |
-| Random Forest | 0.9561 | 0.9655 | 0.9931 |
-
-
-<p align="center">
-    <img src="images/confusion_matrices.png" width="400">
-    <img src="images/roc_curves.png" width="400">
-</p>
-
-<p align="center">
-    <img src="images/feature_importances.png" width="400">
-</p>
-
-> **Best model:** Logistic Regression with 98.25% accuracy
-
-## 📁 Project Structure
-
-```bash
-Breast_Cancer_Prediction/
-|
-├── noteBooks/
-│ ├── 01_Data_Loading_and_EDA.ipynb
-│ ├── 02_Modeling.ipynb
-|
-├── images/
-│ ├── class_count.png
-│ ├── confusion_matrices.png
-│ ├── correlation_heatmap.png
-│ ├── feature_distributions.png
-│ ├── roc_curves.png
-│ ├── target_distribution_pie.png
-│ ├── feature_importances.png
-|
-├── models/
-│ ├── logistic_regression_model.pkl
-│ ├── scaler.pkl
-|
-├── src/
-│ ├── predict.py
-|
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
 
 
 ## 🧠 Modeling
@@ -203,10 +153,60 @@ joblib.dump(scaler, "models/scaler.pkl")
 | 'logistic_regression_model.pkl' | Trained Logistic Regression Model |
 | 'scaler.pkl' | Fitted StandardScaler |
 
----
+
+----
+
+## 🎯 Results
+| Model | Accuracy | F1 Score | AUC |
+|-------|---------:|---------:|----:|
+| Logistic Regression | 0.9825 | 0.9861 | 0.9954 |
+| Random Forest | 0.9561 | 0.9655 | 0.9931 |
 
 
-## ⚙️ How to Run
+<p align="center">
+    <img src="images/confusion_matrices.png" width="400">
+    <img src="images/roc_curves.png" width="400">
+</p>
+
+<p align="center">
+    <img src="images/feature_importances.png" width="400">
+</p>
+
+> **Best model:** Logistic Regression with 98.25% accuracy
+
+
+
+## 📁 Project Structure
+
+```bash
+Breast_Cancer_Prediction/
+|
+├── noteBooks/
+│ ├── 01_Data_Loading_and_EDA.ipynb
+│ ├── 02_Modeling.ipynb
+|
+├── images/
+│ ├── class_count.png
+│ ├── confusion_matrices.png
+│ ├── correlation_heatmap.png
+│ ├── feature_distributions.png
+│ ├── roc_curves.png
+│ ├── target_distribution_pie.png
+│ ├── feature_importances.png
+|
+├── models/
+│ ├── logistic_regression_model.pkl
+│ ├── scaler.pkl
+|
+├── src/
+│ ├── predict.py
+|
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+## ⚙️ Istallation
 
 ### 1. Clone the repository
 
