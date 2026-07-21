@@ -46,7 +46,7 @@ The goal is to:
 
 
 ## Class distribution:
-![alt text](https://kommodo.ai/i/ADoE8uSPrSwOk4u69eVj) ![alt text](class_count.png)
+![https://kommodo.ai/i/ADoE8uSPrSwOk4u69eVj](target_distribution_pie.png) ![alt text](class_count.png)
 
 **Basic checks performed:**
 - `df.head()` inspect first rows
