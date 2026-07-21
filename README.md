@@ -45,8 +45,9 @@ The goal is to:
 | Missing values | None |
 
 
-## Class distribution:
-![Image https://kommodo.ai/i/ADoE8uSPrSwOk4u69eVj]
+**Class distribution:**
+
+![Class Distribution](images/class_distribution.png)
 
 **Basic checks performed:**
 - `df.head()` inspect first rows
@@ -74,6 +75,14 @@ Breast_Cancer_Prediction/
 ├── noteBooks/
 │ ├── 01_Data_Loading_and_EDA.ipynb
 │ ├── 02_Modeling.ipynb
+|
+├── images/
+│ ├── class_count.png
+│ ├── confusion_matrices.png
+│ ├── correlation_heatmap.png
+│ ├── feature_distributions.png
+│ ├── roc_curves.png
+│ ├── target_distribution_pie.png
 |
 ├── models/
 │ ├── logistic_regression_model.pkl
