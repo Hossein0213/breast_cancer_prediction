@@ -46,7 +46,7 @@ The goal is to:
 
 
 ## Class distribution:
-![Image](https://kommodo.ai/i/ADoE8uSPrSwOk4u69eVj)
+![Image https://kommodo.ai/i/ADoE8uSPrSwOk4u69eVj]
 
 **Basic checks performed:**
 - `df.head()` inspect first rows
