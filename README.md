@@ -48,9 +48,15 @@ The goal is to:
 **Class distribution:**
 
 <p align="center">
-  <img src="images/class_count.png" width="350">
+  <img src="images/class_count.png" width="380">
   <img src="images/target_distribution_pie.png" width="300">
 </p>
+
+<p align="center">
+  <img src="images/feature_distributions.png" width="500">
+  <img src="imeges/correlation_heatmap.png" width="500">
+</p>
+
 <!-- ![Class Distribution](images/class_count.png) ![target distribution](images/target_distribution_pie.png) -->
 
 **Basic checks performed:**
@@ -68,6 +74,15 @@ The goal is to:
 | Logistic Regression | 0.9825 | 0.9861 | 0.9954 |
 | Random Forest | 0.9561 | 0.9655 | 0.9931 |
 
+
+<p align="center">
+    <img src="images/confusion_matrices.png" width="400">
+    <img src="images/roc_curves.png" width="400">
+</p>
+
+<p align="center">
+    <img src="images/feature_importances.png" width="400">
+</p>
 
 > **Best model:** Logistic Regression with 98.25% accuracy
 
@@ -87,6 +102,7 @@ Breast_Cancer_Prediction/
 │ ├── feature_distributions.png
 │ ├── roc_curves.png
 │ ├── target_distribution_pie.png
+│ ├── feature_importances.png
 |
 ├── models/
 │ ├── logistic_regression_model.pkl
