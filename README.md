@@ -44,6 +44,10 @@ The goal is to:
 | Target | 0 → Malignant, 1 → Benign |
 | Missing values | None |
 
+
+## Class distribution:
+![alt text](target_distribution_pie.png) ![alt text](class_count.png)
+
 **Basic checks performed:**
 - `df.head()` inspect first rows
 - `df.shape` → (569, 31)
