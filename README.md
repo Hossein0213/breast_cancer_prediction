@@ -34,6 +34,17 @@ The goal is to:
 
 ----
 
+## ✨Features
+- **Exploratory Data Analysis (EDA)** including class distribution, feature distributions, and correlation analysis.
+- **Data Preprocessing** with train/test split and feature standardization using `StandardScaler`.
+- **Machine Learning Models** using Logistic Regression and Random Forest classifiers.
+- **Comprehensive Model Evalution** with Accuracy, F1 score, ROC-AUC, Confusion Matrix, and ROC Curve.
+- **Feature Importance Analysis** to identify the most influential predictors for bearst cancer classification.
+- **Model Serialization** using Joblib for saving the trained model and preprocessing scaler.
+- **Interactive Streamlit Application** for real-time bearst cancer prediction.
+- **Clean Project Structuer** following best practices for reproducible machine learning projects.
+
+
 ## 📊 Dataset
 
 | Property | Value |
@@ -44,6 +55,16 @@ The goal is to:
 | Target | 0 → Malignant, 1 → Benign |
 | Missing values | None |
 
+
+## 🔍 Exploratory Data Analysis
+
+| Check | Result |
+|-------|--------|
+| shape | (569, 31) including target column |
+| Missing values | None - no imputation required |
+| Class distribution | 212 malignant (37.3%) . 357 Benign (62.7%) |
+| Feature types | All continuos numerical values |
+| Scaling required | Yes - StandardScaler applied before training |
 
 **Class distribution:**
 
@@ -208,33 +229,38 @@ Breast_Cancer_Prediction/
 
 ## ⚙️ Istallation
 
-### 1. Clone the repository
-
 ```bash
+# 1. Clone the repository
 git clone https://github.com/Hossein0213/breast_cancer_prediction.git
-cd breast_cancer_prediction
-```
+cd bearst_cancer_prediction
 
-### 2. Create a virtual environment (Optional)
-```bash
+# 2. Create and activate a virtual environmebt
 python -m venv venv
-source venv/bin/activate # Windows: venv/Scripts/activate
-```
+source venv/bin/activate  # windows: venv\Scripts\activate
 
-### 3. Install dependencies
-```bash
+# 3. Install dependencies
 pip install -r requirements.txt
 ```
 
-### 4. Run the notebook
-- Open with Jupyter Notebook
-- Or VS Code with Jupyter Extension
 
-### 5. Run Streamlit app
+---
+
+## 🚀 Usage
+**Run notebooks:**
+```bash
+jupyter notebook notebooks/01_Data_Loading_and_EDA.ipynb
+jupyter notebook notebooks/02_Modeling.ipynb
+```
+
+**Run inference:**
+```bash
+python src/predict.py
+```
+
+**Launch Streamlit app:**
 ```bash
 streamlit run streamlit_app.py
 ```
-
 ---
 
 ## 💡 Key Findings
@@ -242,9 +268,12 @@ streamlit run streamlit_app.py
 - Dataset is ** clean ** - no missing values across all 30 features
 - ** Logistic Regression ** outperforms Random Forest (98.2% vs 95.6%)
 - 'StandardScaler' is essential - improves logistic Regression significantly
-- Most informative featuers: 'mean radius', 'mean concave points', 'worst perimeter'
+- Most informative features: 'mean radius', 'mean concave points', 'worst perimeter'
 
 ---
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
 
 ## 👤 Author
 
