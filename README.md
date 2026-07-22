@@ -38,7 +38,7 @@ The goal is to:
 
 ----
 
-## ✨Features
+## ✨ Features
 - **Exploratory Data Analysis (EDA)** including class distribution, feature distributions, and correlation analysis.
 - **Data Preprocessing** with train/test split and feature standardization using `StandardScaler`.
 - **Machine Learning Models** using Logistic Regression and Random Forest classifiers.
