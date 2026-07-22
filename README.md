@@ -11,12 +11,16 @@ Predicting breast cancer **(Benign vs Malignant)** using classical ML models, de
 ## 📑 Table of Contents
 
 - [Overview](#-overview)
+- [Features](#-features)
 - [Dataset](#-dataset)
+- [Exploratory Data Analysis](#-exploratory-data-analysis)
+- [Modeling](#-modeling)
 - [Results](#-results)
 - [Project Structure](#-project-structure)
-- [Modeling](#-modeling)
-- [How to Run](#️-how-to-run)
+- [Installation](#️-installation)
+- [Usage](#-usage)
 - [Key Findings](#-key-findings)
+- [License](#-license)
 - [Author](#-author)
 
 ---
@@ -227,7 +231,7 @@ Breast_Cancer_Prediction/
 └── .gitignore
 ```
 
-## ⚙️ Istallation
+## ⚙️ Installation
 
 ```bash
 # 1. Clone the repository
